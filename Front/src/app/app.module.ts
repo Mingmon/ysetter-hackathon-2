@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './component/login/login.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutes } from './app.routing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LocalStorageModule } from 'angular-2-local-storage';
+
 
 
 @NgModule({
@@ -16,6 +19,12 @@ import { AppRoutes } from './app.routing';
   imports: [
     AppRoutes,
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    LocalStorageModule.withConfig({
+      prefix: 'project',
+      storageType: 'localStorage'
+  }),
     
   ],
   providers: [],

@@ -2,6 +2,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './component/login/login.component';
 import { MainComponent } from './component/main/main.component';
 import { MainModule } from './component/main/main.module';
+import { AuthGuard } from './guard/auth.guard';
 
 const routes: Routes = [
   {
@@ -21,6 +22,7 @@ const routes: Routes = [
   {
     path: 'main',
     loadChildren: () => MainModule,
+    canActivate: [AuthGuard]
   }
 ];
 
