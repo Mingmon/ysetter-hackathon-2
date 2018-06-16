@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutes } from './app.routing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LocalStorageModule } from 'angular-2-local-storage';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -25,6 +26,7 @@ import { LocalStorageModule } from 'angular-2-local-storage';
       prefix: 'project',
       storageType: 'localStorage'
   }),
+    BrowserAnimationsModule,
     
   ],
   providers: [],
