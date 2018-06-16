@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container"></div>
 <h3 align = 'left'>ข้อมูลโครงการ</h3>
 <div class="row">
     <div class="col-sm-3 b">
@@ -102,9 +102,14 @@
                       </select></div>
                     </div>
                <p>ระยะเวลาการก่อสร้าง</p>
-                <input type="์Name" class="form-control" placeholder="DD/MM/YYYY">  
+                <input type="์Name" class="form-control col-sm-4" placeholder="DD/MM/YY">  
+                <label class="inline">
+                     ถึง
+                  </label>
+                <input type="์Name" class="form-control col-sm-4" placeholder="DD/MM/YY">  
+
                 <div class="mt-3">
-                <p>ผู้ประสานงานแสนสิริ <input type="์Name" class="form-control" placeholder="ชื่อ"></p> 
+                <p>---ผู้ประสานงานแสนสิริ--- <input type="์Name" class="form-control" placeholder="ชื่อ"></p> 
                 </div>  
                 <div class="mt-3">
                         <p> <input type="์LName" class="form-control" placeholder="นามสกุล"></p> 
@@ -115,9 +120,42 @@
                                 <p> <input type="phone" class="form-control" placeholder="EX.081-2345678"></p> 
                             <p>อีเมลล์</p>
                             <p> <input type="email" class="form-control" placeholder="example@example.com"></p>
-                               
-                        
-                
+                       <!--ส่วนผู้รับเหมา--> 
+                       
+                 <div class="mt-3">
+                <p>-----ผู้รับเหมา----- <input type="์Name" class="form-control" placeholder="ชื่อ"></p> 
+                </div>  
+                <div class="mt-3">
+                        <p> <input type="์LName" class="form-control" placeholder="นามสกุล"></p> 
+                        </div>  
+                        <div class="mt-3">
+                            <p>เบอร์</p></div>
+                            
+                                <p> <input type="phone" class="form-control" placeholder="EX.081-2345678"></p> 
+                            <p>อีเมลล์</p>
+                            <p> <input type="email" class="form-control" placeholder="example@example.com"></p>
+                            <p>ข้อมูลที่พักคนงาน</p>
+                    
+                            <div class="form-group">
+                                <label for="exampleTextarea">ที่อยู่</label>
+                                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                              </div>
+                              <p>มีโครงการ The Good Space หรือไม่</p>
+                              <form>
+                                <label class="radio-inline">
+                                  <input type="radio" name="optradio"> - มี -
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" name="optradio"> - ไม่มี -
+                                </label>
+                                
+                              </form>
+
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-lg-5 col-sm-7 mt-3">
+                                  <button type="submit" class="btn btn-success col-11" (click)="save()">Submit</button>
+                                </div>
+                              </div>
 
                   
             
