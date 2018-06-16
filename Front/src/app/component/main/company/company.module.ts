@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CompanyComponent } from './company.component';
 import { CompanyRoutes } from './company.routing';
 import { CreateCompanyComponent } from './create-company/create-company.component';
+import { ShowCompanyComponent } from './show-company/show-company.component';
 
 @NgModule({
   imports: [
@@ -10,7 +11,8 @@ import { CreateCompanyComponent } from './create-company/create-company.componen
     CompanyRoutes
   ],
   declarations: [CompanyComponent,
-    CreateCompanyComponent
+    CreateCompanyComponent,
+    ShowCompanyComponent
 ],
   exports:[
     CreateCompanyComponent
