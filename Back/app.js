@@ -21,8 +21,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter); //เพิ่มอันนี้ด้วยถ้าเพิ่มเร้าท์
-app.use('/users/GetUser', usersRouter);
-app.use('/users/CreatUser', usersRouter);
+app.use('/users', usersRouter);
+app.use('/users', usersRouter);
 
 
 // catch 404 and forward to error handler
