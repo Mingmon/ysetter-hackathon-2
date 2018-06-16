@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EmployeeComponent } from './employee.component';
 import { EmployeeRoutes } from './employee.routing';
-import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { ShowEmployeeComponent } from './show-employee/show-employee.component';
 
 @NgModule({
   imports: [
@@ -10,7 +10,7 @@ import { CreateEmployeeComponent } from './create-employee/create-employee.compo
     EmployeeRoutes
   ],
   declarations: [EmployeeComponent,
-    CreateEmployeeComponent
+    ShowEmployeeComponent
 ]
 })
 export class EmployeeModule { }
