@@ -1,24 +1,95 @@
 <div class="grid-container">
-  <h1 class="mat-h1">Dashboard</h1>
-  <mat-grid-list cols="2" rowHeight="350px">
-    <mat-grid-tile *ngFor="let card of cards" [colspan]="card.cols" [rowspan]="card.rows">
-      <mat-card class="dashboard-card">
-        <mat-card-header>
-          <mat-card-title>
-            {{card.title}}
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-              <mat-icon>more_vert</mat-icon>
-            </button>
-            <mat-menu #menu="matMenu" xPosition="before">
-              <button mat-menu-item>Expand</button>
-              <button mat-menu-item>Remove</button>
-            </mat-menu>
-          </mat-card-title>
-        </mat-card-header>
-        <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
-</div>
+    <h1 class="mat-h1">Dashboard</h1>
+  
+    <div class="card-deck mt-2">
+      <div class="card">
+        <div class="card-body">
+          <div class="col-12">
+            <!-- <canvas id="canvas">{{ mychart }}</canvas> -->
+            <div class="row">
+                <label for="">จำนวนเแรงงานทั้งหมด</label>
+                <p class="pl-3">89 คน</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+    <div class="card-deck mt-2">
+      <div class="card">
+        <h5 class="card-header ">สัญชาติ</h5>
+        <div class="card-body">
+          <div class="col-12">
+            <canvas id="national"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h5 class="card-header ">เพศ</h5>
+        <div class="card-body">
+            <canvas id="sex">}</canvas>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card-deck mt-2">
+      <div class="card">
+        <h5 class="card-header ">จำนวนแรงงานในแต่ละปี</h5>
+        <div class="card-body">
+            <canvas id="eachyear">}</canvas>
+          <div class="col-12">
+            <!-- <canvas id="canvas">{{ mychart }}</canvas> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h5 class="card-header ">จำนวนพนักงานแต่ละโครงการ</h5>
+        <div class="card-body">
+            <canvas id="eachproject">}</canvas>
+        </div>
+      </div>
+    </div>
+
+
+  
+      <div class="card-deck mt-2">
+          <div class="card">
+            <h5 class="card-header ">จำนวนเด็ก 55 คน</h5>
+            <div class="card-body">
+              <div class="col-12">
+                  <canvas id="kids">}</canvas>
+              </div>
+            </div>
+          </div>
+    
+          <div class="card">
+            <h5 class="card-header ">เพศ</h5>
+            <div class="card-body">
+                <canvas id="kidsex">}</canvas>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card-deck mt-2">
+          <div class="card">
+            <h5 class="card-header ">ระดับการศึกษา</h5>
+            <div class="card-body">
+              <div class="col-12">
+                  <canvas id="education">}</canvas>
+                <!-- <canvas id="canvas">{{ mychart }}</canvas> -->
+              </div>
+            </div>
+          </div>
+    
+          <div class="card">
+            <h5 class="card-header ">ได้รับวัคซีน</h5>
+            <div class="card-body">
+                <canvas id="vaccine">}</canvas>
+            </div>
+          </div>
+        </div>
+
+  </div>
