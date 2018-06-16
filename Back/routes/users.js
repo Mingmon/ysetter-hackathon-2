@@ -12,8 +12,8 @@ router.get('/GetUser', function(req, res, next) {
       "name": "Clash of kings"
     }
   ];
-
-  res.json(db);
+  // res.body.
+  req.json(db);
 });
 
 /* GET users listing. */
