@@ -27,7 +27,7 @@ export class MyDashboardComponent {
 ngOnInit(): void {
   // Called after the constructor, initializing input properties, and the first call to ngOnChanges.
   // Add 'implements OnInit' to the class.
-  this.callAllChart();
+  
   this.data = {
     datasets: [{
       data: [10, 20, 30],
@@ -46,7 +46,7 @@ ngOnInit(): void {
     '#1f77b4', '#e377c2', '#ff7f0e', '#2ca02c', '#bcbd22', '#d62728',
     '#17becf', '#9467bd', '#7f7f7f', '#8c564b', '#3366cc'
   ];
- 
+  this.callAllChart();
 }
 
 nationalChartMethod(): void {
@@ -65,7 +65,7 @@ sexChartMethod(): void {
 }
 employeesEachYearChartMethod(): void {
   this.employeesEachYearChart = new Chart('eachyear', {
-    type: 'pie',
+    type: 'line',
     data: this.data,
   });
 }
@@ -77,7 +77,7 @@ employeesEachProjectChartMethod(): void {
 }
 numberOfKidsChartMethod(): void {
   this.numberOfKidsChart = new Chart('kids', {
-    type: 'pie',
+    type: 'line',
     data: this.data,
   });
 }
