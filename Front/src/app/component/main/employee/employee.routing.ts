@@ -1,21 +1,21 @@
 import { Routes, RouterModule } from '@angular/router';
 import { EmployeeComponent } from './employee.component';
-import { CreateEmployeeComponent } from './create-employee/create-employee.component';
+import { ShowEmployeeComponent } from './show-employee/show-employee.component';
 
 const routes: Routes = [
   { path: '',
-  component: EmployeeComponent ,
+  component: EmployeeComponent,
   children: [
     {
       path: '',
-      redirectTo: 'create',
+      redirectTo: 'show',
       pathMatch: 'full'
     },
     {
-      path: 'create',
-      component: CreateEmployeeComponent
+      path: 'show',
+      component: ShowEmployeeComponent
     }
-  ]}
+  ] },
 ];
 
 export const EmployeeRoutes = RouterModule.forChild(routes);
