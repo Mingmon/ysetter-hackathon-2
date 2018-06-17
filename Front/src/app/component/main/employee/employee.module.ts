@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { EmployeeComponent } from './employee.component';
 import { EmployeeRoutes } from './employee.routing';
 import { ShowEmployeeComponent } from './show-employee/show-employee.component';
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 
 @NgModule({
   imports: [
@@ -10,7 +11,8 @@ import { ShowEmployeeComponent } from './show-employee/show-employee.component';
     EmployeeRoutes
   ],
   declarations: [EmployeeComponent,
-    ShowEmployeeComponent
+    ShowEmployeeComponent,
+    CreateEmployeeComponent
 ]
 })
 export class EmployeeModule { }
