@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MyDashboardComponent } from './my-dashboard/my-dashboard.component';
 import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
+import { MyDashboardComponent } from './my-dashboard/my-dashboard.component';
 
 
 @NgModule({
@@ -14,7 +14,8 @@ import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButt
     MatButtonModule,
 
   ],
-  declarations: [MyDashboardComponent],
+  declarations: [MyDashboardComponent
+],
   exports: [MyDashboardComponent]
 })
 export class DashboardModule {  }
