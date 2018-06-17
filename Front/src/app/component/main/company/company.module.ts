@@ -11,7 +11,7 @@ import { ShowCompanyComponent } from './show-company/show-company.component';
     CompanyRoutes
   ],
   declarations: [CompanyComponent,
-    CreateCompanyComponent,
+    CreateCompanyComponent,
     ShowCompanyComponent
 ],
   exports:[
