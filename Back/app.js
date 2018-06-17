@@ -4,7 +4,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/employe');
+var employeeRouter = require('./routes/employe');
+var projectdataRouter = require('./routes/projectdata');
 var cors = require('cors');
 var bodyParser = require('body-parser');
 var app = express();
@@ -24,7 +25,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter); //เพิ่มอันนี้ด้วยถ้าเพิ่มเร้าท์
-app.use('/employe', usersRouter);
+app.use('/employe', employeeRouter);
+app.use('/projectdata', projectdataRouter);
 
 
 
