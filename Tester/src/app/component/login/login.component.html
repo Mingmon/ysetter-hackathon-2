@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="text-center">
+      <h1>LOGIN</h1>
+      <p>login to fill the form.</p>
+    </div>
+    <div class="justify-content-center align-items-center">
+  
+      <div class="form-group" [formGroup]="loginForm">
+        <div class="row justify-content-center align-items-center">
+          <div class=" col-lg-5 col-sm-7 ">
+            <label for="code">Username</label>
+            <input formControlName="username" type="text" class="form-control"
+             [ngClass]="{'is-invalid' : loginForm.controls['username'].touched &&
+            !loginForm.controls['username'].valid}" />
+            <div class="invalid-feedback">กรุณากรอกชื่อผู้ใช้งาน</div>
+          </div>
+        </div>
+  
+        <div class="row justify-content-center align-items-center">
+          <div class=" col-lg-5 col-sm-7 mt-2">
+            <label for="code">Password</label>
+            <input formControlName="password" type="password" class="form-control"
+            [ngClass]="{'is-invalid' : loginForm.controls['password'].touched &&
+            !loginForm.controls['password'].valid}" />
+            <div class="invalid-feedback">กรุณากรอกรหัสผ่าน</div>
+          </div>
+  
+        </div>
+  
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-5 col-sm-7 mt-3">
+            <button type="submit" class="btn btn-success col-12" (click)="save()">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
