@@ -1,6 +1,7 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <h3 align = 'left'>ข้อมูลผู้ใช้แรงงาน</h3>
 <div class="row">
-    <div class="col-sm-3 b">
+    <div class="col-sm-5 b">
                             
   <p>คำนำหน้า</p>
   <form>
@@ -36,7 +37,7 @@
               
               </select><br/>
               <label for="">ระบุสัญชาติ ►</label>
-              <label for=""> <input type="otherN" class="form-control" placeholder="อื่นๆ(เลือกแล้วไม่ต้องกรอก)"></label>
+              <label for=""> <input type="otherN" class="form-control" placeholder="อื่นๆ(เลือกแล้วไม่ต้องกรอก)"></label><br/>
               <label for="">• ประเภทแรงงาน ►</label>
             <select name="type">
                 <option value="" selected>-เลือกประเภท-</option>
@@ -47,16 +48,93 @@
               
               </select><br/>
               <label for="">ระบุประเภท ►</label>
-              <label for=""> <input type="otherN" class="form-control" placeholder="อื่นๆ(เลือกแล้วไม่ต้องกรอก)"></label>
-              <p>• มีผู้ติดตามหรือไม่?</p>
-  <form>
-    <label class="radio-inline">
-      <input type="radio" name="ผู้ติดตาม">&nbsp;มี  &nbsp;
-    </label>
-    <label class="radio-inline">
-      <input type="radio" name="ผู้ติดตาม">&nbsp;ไม่มี&nbsp;
-    </label>
-  </form>
+              <label for=""> <input type="otherN" class="form-control" placeholder="อื่นๆ(เลือกแล้วไม่ต้องกรอก)"></label><br/>
+   
+  <label for="">• มีผู้ติดตามหรือไม่? ►</label>
+            <select name="type">
+                <option value="" selected>-เลือก-</option>
+                <option value="0">ไม่มี</option>
+                <option value="1">มี</option>
+              </select>
+              <label for=""> <input type="otherN" class="form-control" placeholder="คน"></label>
+             <p>ถ้ามีระบุความสัมพัธน์</p>
+             <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">สามี/ภรรยา</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">บุตร</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox2">อื่นๆ</label><label for=""> <input type="otherN" class="form-control" placeholder="อื่นๆ(เลือกแล้วไม่ต้องกรอก)"></label>
+            </div>
+            <div class="container">
+              <h2>กรอกประวัติลูก</h2>
+              
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>บุตร1</th>
+                    <th>บุตร2</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ชื่อ</td>
+                    <td> <input type="์Name" class="form-control" placeholder="ชื่อ">
+                    </td>
+                    <td> <input type="์Name" class="form-control" placeholder="ชื่อ">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>นามสกุล</td>
+                    <td> <input type="์LName" class="form-control" placeholder="นามสกุล">
+                    </td>
+                    <td> <input type="์LName" class="form-control" placeholder="นามสกุล">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>เลขประจำตัวประชาชน</td>
+                   <td><input type="CID" class="form-control" placeholder="เลขประจำตัว">
+                    </td>
+                    <td><input type="CID" class="form-control" placeholder="เลขประจำตัว">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>อายุ</td>
+                    <td><input type="์Age" class="form-control" placeholder="อายุ">
+                    </td>
+                    <td><input type="์Age" class="form-control" placeholder="อายุ">
+                    </td>
+                  </tr>
+                  <tr>
+                      <td>ได้รับวัคซีนในช่วง 0-4 ปี</td>
+                      <td><select name="type">
+                          <option value="" selected>-เลือก-</option>
+                          <option value="0">ไม่ได้</option>
+                          <option value="1">ได้รับ</option>
+                        </select>
+                      </td>
+                      <td><select name="type">
+                          <option value="" selected>-เลือก-</option>
+                          <option value="0">ไม่ได้</option>
+                          <option value="1">ได้รับ</option>
+                        </select>
+                      </td>
+                    </tr>
+                </tbody>
+              </table>
+              <div class="row justify-content-center align-items-center">
+                  <div class="col-lg-5 col-sm-7 mt-3">
+                    <button type="submit" class="btn btn-success col-11" (click)="save()">Submit</button>
+                  </div>
+                </div>
+            </div>
+           
 
  
                                 
