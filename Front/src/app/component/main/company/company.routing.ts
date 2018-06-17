@@ -1,6 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 import { CompanyComponent } from './company.component';
 import { CreateCompanyComponent } from './create-company/create-company.component';
+import { ShowCompanyComponent } from './show-company/show-company.component';
 
 const routes: Routes = [
   { path: '',
@@ -14,6 +15,10 @@ const routes: Routes = [
     {
       path: 'create',
       component: CreateCompanyComponent
+    },
+    {
+      path: 'show',
+      component: ShowCompanyComponent
     }
   ]
 }
